@@ -4,6 +4,7 @@ import {ThemeProvider} from "@material-ui/styles";
 import theme from "./ui/Theme";
 import{BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./ui/Home";
+import LandingPage from "./LandingPage";
 import Try from "./ui/Try.js"
 // import Button from "@material-ui/core/Button";
 // import Test from "./Test";
@@ -32,7 +33,7 @@ function App(prop) {
 
               <Switch>
 
-                  <Route  exact path="/" component={Home}/>
+                  <Route  exact path="/" component={LandingPage}/>
                   <Route  exact path="/services" component={()=> <div>service</div>}/>
                   <Route  exact path="/customsoftware" component={()=> <div>custom</div>}/>
                   <Route  exact path="/mobileapps" component={()=> <div>mobile</div>}/>
@@ -44,7 +45,7 @@ function App(prop) {
 
 
               </Switch>
-                <div style={{height:"845px" }}></div>
+
               <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
           </Router>
 
