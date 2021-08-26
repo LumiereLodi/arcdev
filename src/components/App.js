@@ -10,6 +10,8 @@ import Try from "./ui/Try.js"
 // import Test from "./Test";
 // import MenuIcon from "@material-ui/icons/Menu"
 import Footer from "./ui/Footer"
+import Contact from "../components/Contact"
+import About from "./ui/about.js"
 
 function App(prop) {
 
@@ -39,8 +41,8 @@ function App(prop) {
                   <Route  exact path="/mobileapps" component={()=> <div>mobile</div>}/>
                   <Route  exact path="/websites" component={()=> <div>websites</div>}/>
                   <Route  exact path="/revolution" component={()=> <div>revolution</div>}/>
-                  <Route  exact path="/about" component={()=> <div>about</div>}/>
-                  <Route  exact path="/contact" component={()=> <div>contact</div>}/>
+                  <Route  exact path="/about" component={About}/>
+                  <Route  exact path="/contact" component={Contact}/>
                   <Route  exact path="/estimate" component={()=> <div>estimate</div>}/>
 
 

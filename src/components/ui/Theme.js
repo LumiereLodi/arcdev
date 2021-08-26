@@ -57,6 +57,11 @@ export default createMuiTheme({
             color: arcGrey,
 
         },
+        subtitle2: {
+            color: "white",
+            fontWeight: 300,
+            fontSize: "1.25rem"
+        },
         learnButton: {
             borderColor: arcBlue,
             borderWidth: 2,
@@ -65,6 +70,35 @@ export default createMuiTheme({
             borderRadius: 50,
             fontFamily: "Roboto",
             fontWeight: "bold"
+        },
+        body1: {
+            fontSize: "1.25rem",
+            color: arcGrey,
+            fontWeight: 300
+        },
+    },
+    overrides: {
+        MuiInputLabel: {
+            root: {
+                color: arcBlue,
+                fontSize: "1rem"
+            }
+        },
+        MuiInput: {
+            root: {
+                color: arcGrey,
+                fontWeight: 300,
+
+            },
+            underline: {
+                //if you use after it will apply when clicked
+                "&:before": {
+                    borderBottom: `2px solid ${arcBlue}`
+                },
+                "&:hover:not($disabled):not($focused):not($error):before": {
+                    borderBottom: `2px solid ${arcBlue}`
+                }
+            }
         }
     }
 });
